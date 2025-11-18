@@ -1,19 +1,81 @@
-section {
+/* ----------- GENERAL ----------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff6f8;
+  color: #333;
+}
+
+/* ----------- HEADER ----------- */
+header {
+  background-color: #e97ea1;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-/* Hace que la imagen y el video queden en paralelo */
-section:nth-of-type(2) {
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ----------- MAIN ----------- */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Secciones generales */
+section {
+  margin-top: 40px;
+}
+
+/* ----------- PRODUCTOS EN PARALELO ----------- */
+section:first-of-type {   /* solo la primera sección de productos */
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px; /* separación entre ambos */
-  flex-wrap: wrap; /* para que se acomode bien en móviles */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-section:nth-of-type(2) img,
-section:nth-of-type(2) iframe {
-  max-width: 45%;
+/* Cada producto */
+section:first-of-type div {
+  background: white;
+  width: 30%;
+  min-width: 260px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes y PDF */
+section:first-of-type img,
+section:first-of-type embed {
+  width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
+/* ----------- FOOTER ----------- */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #e97ea1;
+  color: white;
+  text-align: center;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
+}
