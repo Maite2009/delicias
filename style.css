@@ -1,81 +1,18 @@
-/* ----------- GENERAL ----------- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<section class="productos-grid">
+  <h2>Delicias hechas a mano</h2>
 
-body {
-  background-color: #fff6f8;
-  color: #333;
-}
+  <div>
+    <embed src="courasants.pdf" type="application/pdf" width="300" height="300">
+    <p><strong>Cupcakes de vainilla</strong> - Esponjosos y decorados con crema de mantequilla.</p>
+  </div>
 
-/* ----------- HEADER ----------- */
-header {
-  background-color: #e97ea1;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+  <div>
+    <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa" alt="Tarta de chocolate">
+    <p><strong>Tarta de chocolate</strong> - Un clásico irresistible para los amantes del cacao.</p>
+  </div>
 
-header nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-/* ----------- MAIN ----------- */
-main {
-  padding: 20px;
-  text-align: center;
-}
-
-/* Secciones generales */
-section {
-  margin-top: 40px;
-}
-
-/* ----------- PRODUCTOS EN PARALELO ----------- */
-section:first-of-type {   /* solo la primera sección de productos */
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Cada producto */
-section:first-of-type div {
-  background: white;
-  width: 30%;
-  min-width: 260px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Imágenes y PDF */
-section:first-of-type img,
-section:first-of-type embed {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* ----------- FOOTER ----------- */
-footer {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #e97ea1;
-  color: white;
-  text-align: center;
-}
-footer a {
-  color: white;
-  text-decoration: underline;
-}
+  <div>
+    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc" alt="Galletas decoradas">
+    <p><strong>Galletas decoradas</strong> - Perfectas para regalar o compartir en familia.</p>
+  </div>
+</section>
