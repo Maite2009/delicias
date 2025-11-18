@@ -1,18 +1,83 @@
-<section class="productos-grid">
-  <h2>Delicias hechas a mano</h2>
+/* ------- ESTILOS GENERALES ------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #ffe4ee;
+  color: #333;
+}
 
-  <div>
-    <embed src="courasants.pdf" type="application/pdf" width="300" height="300">
-    <p><strong>Cupcakes de vainilla</strong> - Esponjosos y decorados con crema de mantequilla.</p>
-  </div>
+/* ------- ENCABEZADO ------- */
+header {
+  background-color: #ff9fc5;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
 
-  <div>
-    <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa" alt="Tarta de chocolate">
-    <p><strong>Tarta de chocolate</strong> - Un clásico irresistible para los amantes del cacao.</p>
-  </div>
+header nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  color: white;
+}
 
-  <div>
-    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc" alt="Galletas decoradas">
-    <p><strong>Galletas decoradas</strong> - Perfectas para regalar o compartir en familia.</p>
-  </div>
-</section>
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ------- CONTENIDO ------- */
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ------- BOTÓN ------- */
+button {
+  background-color: #ff8ab7;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #ff6da9;
+}
+
+/* ------- PRODUCTOS EN PARALELO ------- */
+section div {
+  display: inline-block;
+  width: 28%;
+  min-width: 240px;
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  vertical-align: top;
+}
+
+section div img,
+section div embed {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ------- FOOTER ------- */
+footer {
+  background-color: #ff9fc5;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
